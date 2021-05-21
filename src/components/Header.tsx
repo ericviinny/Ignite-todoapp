@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StatusBar, StyleSheet } from 'react-native';
+import { useTheme } from 'styled-components';
 
 export function Header() {
+  const theme = useTheme();
+
   return (
     <View style={styles.header}>
       <Text style={styles.headerText}>to.</Text>
